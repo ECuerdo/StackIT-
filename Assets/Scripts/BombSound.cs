@@ -18,7 +18,7 @@ public class BombSound : MonoBehaviour
     void Update()
     {
         // Check if the GameObject is falling
-        if (!isFalling && transform.position.y < 4 && GetComponent<Rigidbody2D>().velocity.y > 0)
+        if (!isFalling && transform.position.y < 4 && GetComponent<Rigidbody2D>().linearVelocity.y > 0)
         {
             isFalling = true;
             droppingSound.Play();

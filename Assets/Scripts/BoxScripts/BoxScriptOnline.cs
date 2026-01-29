@@ -91,7 +91,7 @@ public class BoxScriptOnline : MonoBehaviour
 
             if (spawnedObject.TryGetComponent(out Rigidbody2D objRigidbody))
             {
-                objRigidbody.velocity = new Vector2(currentBoxMoveSpeed, objRigidbody.velocity.y);
+                objRigidbody.linearVelocity = new Vector2(currentBoxMoveSpeed, objRigidbody.linearVelocity.y);
 
                 // if (lastDroppedItem != null)
                 // {
